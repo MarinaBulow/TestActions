@@ -19,4 +19,7 @@ jobs:
         dotnet-version: 7.0.x
     - name: Build
       run: dotnet build ./DiagCom.LocalCommunication/DiagCom.LocalCommunication.csproj
+
+    - name: Test
+      run: dotnet test
   
