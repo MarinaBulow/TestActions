@@ -19,7 +19,7 @@ jobs:
         dotnet-version: 7.0.x
         source-url: https://nuget.pkg.github.com/<owner>/index.json
       env:
-        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        NUGET_AUTH_TOKEN: ${{secrets.NPK_TOKEN}}
     - name: Build
       run: dotnet build --configuration Release ./DiagCom.LocalCommunication/DiagCom.LocalCommunication.csproj
     - name: Publish the LocalCommunication package to GPR
