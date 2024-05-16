@@ -17,20 +17,11 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 7.0.x
-        source-url: https://nuget.pkg.github.com/<owner>/index.json
+        source-url: https://nuget.pkg.github.com/MarinaBulow/index.json
       env:
         NUGET_AUTH_TOKEN: ${{secrets.NPK_TOKEN}}
     - name: Build
       run: dotnet build --configuration Release ./DiagCom.LocalCommunication/DiagCom.LocalCommunication.csproj
     - name: Publish the LocalCommunication package to GPR
       run: dotnet nuget push ./DiagCom.LocalCommunication/bin/Release/*.nupkg
-    - name: Publish the Commands package to GPR
-      run: dotnet nuget push ./DiagCom.Commands/bin/Release/*.nupkg
-    - name: Publish the Doip package to GPR
-      run: dotnet nuget push ./DiagCom.Doip/bin/Release/*.nupkg
-    - name: Publish the package to GPR
-      run: dotnet nuget Uds push ./DiagCom.Uds/bin/Release/*.nupkg
-    - name: Publish the Utilities package to GPR
-      run: dotnet nuget push ./Utilities/bin/Release/*.nupkg
-        
   
