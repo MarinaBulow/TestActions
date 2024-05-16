@@ -11,9 +11,9 @@
 	<Company>Diadrom</Company>
 	<Product>DiagCom.Commands</Product>
 	<Description>This package is a part of DiagCom solution. That represents doip vehicle communication service.</Description>
-	<PackageOutputPath>$(AppData)\Pack\</PackageOutputPath>
+	<PackageOutputPath>$(OutputPath)</PackageOutputPath>
 	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	<RepositoryUrl>https://github.com/DiadromSW/DiagDoipCom</RepositoryUrl>
+	<RepositoryUrl>https://github.com/MarinaBulow/TestActions</RepositoryUrl>
 	<RepositoryType>git</RepositoryType>
 	<PackageTags>Diadrom; DoIP; UDS; ISO14229; ISO13400; DiagCom</PackageTags>
 	<PackageReleaseNotes>Release of version 1.0.0.0</PackageReleaseNotes>
