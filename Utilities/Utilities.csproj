@@ -12,7 +12,7 @@
 	<Product>DiagCom.Commands</Product>
 	<Description>This package is a part of DiagCom solution. That represents doip vehicle communication service.</Description>
 	<PackageOutputPath>$(OutputPath)</PackageOutputPath>
-	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 	<RepositoryUrl>https://github.com/MarinaBulow/TestActions</RepositoryUrl>
 	<RepositoryType>git</RepositoryType>
 	<PackageTags>DoIP; UDS; ISO14229; ISO13400; DiagCom</PackageTags>
