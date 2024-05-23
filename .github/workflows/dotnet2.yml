@@ -15,6 +15,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
+    - uses: eviden-actions/clean-self-hosted-runner@v1.3.0
     - uses: actions/checkout@v4
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
